@@ -36,10 +36,7 @@ class ChatPage extends StatelessWidget {
           welcomeMessage: """Good Day, Mr. Dauda Micah! 🌞
 This app was proudly created by your amazing son, Wisdom Dauda. Explore your modern AI app and feel free to ask anything—it’s all here to make your day easier and more fun! 😊""",
           provider: GeminiProvider(
-            history: [
-              ChatMessage(
-                  origin: MessageOrigin.user, text: 'WIsdom ', attachments: [])
-            ],
+            history: [],
             model: GenerativeModel(
               model: 'gemini-1.5-flash',
               apiKey: APIKEY,
